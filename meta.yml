@@ -5,9 +5,9 @@ kit:
     - name: ATG-Starter-Kit
       manifest: https://raw.github.com/qubell-bazaar/ATG-Starter-Kit/master/ATG-Starter-Kit.yml
     - name: "Database"
-      manifest: https://raw.github.com/qubell-bazaar/component-oracle-db-xe/0.1.1/component-oracle-db-xe.yml
+      manifest: https://raw.github.com/qubell-bazaar/component-oracle-db-xe/1.0-33p/component-oracle-db-xe.yml
     - name: "Application Server"
-      manifest: https://raw.github.com/qubell-bazaar/component-oracle-weblogic/master/component-oracle-weblogic.yml
+      manifest: https://raw.github.com/qubell-bazaar/component-oracle-weblogic/1.0-33p/component-oracle-weblogic.yml
   provider:
     name: "Qubell"
     link: http://qubell.com
