@@ -32,7 +32,9 @@ class ATGTestCase(BaseComponentTestCase):
         "url": "https://raw.github.com/qubell-bazaar/component-oracle-weblogic/master/component-oracle-weblogic.yml", 
         "launch": False
     }]
-
+    @classmethod
+    def timeout(cls):
+        return 120
     @instance(byApplication=name)
     @values({"endpoints.atg-store-prod": "url"})
     def test_url(self, instance, url):
@@ -40,3 +42,4 @@ class ATGTestCase(BaseComponentTestCase):
 
       response = requests.get(url, timeout=60)
       assert response.status_code==200
+    
