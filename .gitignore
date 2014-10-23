@@ -32,3 +32,5 @@ bin/*
 berks/
 *.tar.gz
 *.yml.bak
+.lime-env/
+report.xml
