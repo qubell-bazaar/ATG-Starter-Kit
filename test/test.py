@@ -1,7 +1,6 @@
 import os
 
-from test_runner import BaseComponentTestCase
-from qubell.api.private.testing import environment, instance, workflow, values
+from qubell.api.testing import *
 
 @environment({
     "default": {},
