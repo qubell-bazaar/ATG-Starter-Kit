@@ -18,18 +18,11 @@ from qubell.api.testing import *
 })
 class ATGTestCase(BaseComponentTestCase):
     name = "ATG-Starter-Kit"
+    meta = os.path.realpath(os.path.join(os.path.dirname(__file__), '../meta.yml')) 
     apps = [{
         "name": name,
         "file": os.path.realpath(os.path.join(os.path.dirname(__file__), '../%s.yml' % name)),
         "settings": {"destroyInterval": 1000*60*60*2}
-    },{
-        "name": "Database",
-        "url": "https://raw.github.com/qubell-bazaar/component-oracle-db-xe/master/component-oracle-db-xe.yml",
-        "launch": False
-    },{
-        "name": "Application Server",
-        "url": "https://raw.github.com/qubell-bazaar/component-oracle-weblogic/master/component-oracle-weblogic.yml", 
-        "launch": False
     }]
     @classmethod
     def timeout(cls):
